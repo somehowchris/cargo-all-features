@@ -4,7 +4,7 @@ use rayon::prelude::*;
 use std::process::{Command, Stdio};
 use which::which;
 
-#[derive(ArgEnum, Clone, Debug, PartialEq)]
+#[derive(ArgEnum, Clone, Debug, PartialEq, Eq)]
 pub enum CommandTarget {
     Cargo,
     Cross,

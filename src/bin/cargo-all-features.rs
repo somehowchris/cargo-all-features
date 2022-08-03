@@ -17,10 +17,13 @@ use yansi::Paint;
     visible_alias = "all-features",
 )]
 struct Cli {
-    #[clap(long, help="The total number of chunks to split into. Only used for calculations", possible_values(["1.."]))]
+    #[clap(
+        long,
+        help = "The total number of chunks to split into. Only used for calculations"
+    )]
     pub chunks: Option<usize>,
 
-    #[clap(long, help="The chunk to process", possible_values(["1..<CHUNKS>"]))]
+    #[clap(long, help = "The chunk to process")]
     pub chunk: Option<usize>,
 
     #[clap(long, help = "If enabled will not execute commands")]
