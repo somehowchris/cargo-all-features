@@ -27,12 +27,12 @@ path = "src/bin/cargo-all-features.rs"
 
 [dependencies]
 itertools = "0.10.3"
-serde_json = "1.0.79"
-serde = { version = "1.0.136", features = ["derive"] }
-rayon = "1.5.2"
+serde_json = "1.0.82"
+serde = { version = "1.0.140", features = ["derive"] }
+rayon = "1.5.3"
 lazy_static = "1.4.0"
 which = "4.2.5"
-clap = { version = "3.1.9", features = ["derive", "cargo"] }
+clap = { version = "3.2.16", features = ["derive", "cargo"] }
 yansi = "0.5.1"
 
 [package.metadata.binstall]
